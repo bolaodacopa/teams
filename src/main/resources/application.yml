@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${TEAM_DB_URL}
+    username: ${TEAM_DB_USERNAME}
+    password: ${TEAM_DB_PASSWORD}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: ${TEAM_DB_PORT}
+  error:
+    include-message: always

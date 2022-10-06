@@ -1,0 +1,12 @@
+version: '3.0'
+services:
+    accounts-server:
+        container_name: teams-server
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: teams-server:latest
+        ports:
+          - 8082:8082
+        env_file:
+          - ./teams.env
