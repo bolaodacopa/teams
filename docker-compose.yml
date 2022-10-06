@@ -1,6 +1,6 @@
 version: '3.0'
 services:
-    accounts-server:
+    teams-server:
         container_name: teams-server
         build:
             context: .
